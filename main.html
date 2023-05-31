@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnifiq</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js">
+    </script>
+    <script type="text/javascript">
+        $(document).on('click', '.nav .navitem', function () {
+            $(this).addClass('active')
+            $(this).parent().siblings().children().removeClass('active');
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/4ceabe38a1.js" crossorigin="anonymous"></script>
+    <script src="myscript.js"></script>
+</head>
+
+
+<body>
+
+    <!-- ====================NAVIGATION BAR========================= -->
+
+    <nav class="navbar">
+
+        <!-- ?-------Smartphone------? -->
+
+        <nav class="mobnav">
+            <div class="logomob">
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </label>
+            <ul class="mobul">
+                <li class="lin"><a href="#home" class="navitem active" target="_self">HOME</a></li>
+                <li class="lin"><a href="#about" class="navitem">ABOUT</a></li>
+                <li class="lin"><a href="#products" class="navitem">PRODUCTS</a></li>
+                <li class="lin"><a href="#blog" class="navitem">BLOG</a></li>
+                <li class="lin"><a href="#contacts" class="navitem">CONTACTS</a></li>
+            </ul>
+        </nav>
+
+        <!-- ?-------PC------? -->
+
+        <div class="container">
+            <div class="logo"></div>
+            <ul class="nav">
+
+                <li class="lin"><a href="#home" class="navitem active" target="_self">HOME</a></li>
+                <li class="lin"><a href="#about" class="navitem">ABOUT</a></li>
+                <li class="lin"><a href="#products" class="navitem">PRODUCTS</a></li>
+                <li class="lin"><a href="#blog" class="navitem">BLOG</a></li>
+                <li class="lin"><a href="#contacts" class="navitem">CONTACTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ====================BANNER SECTION========================= -->
+
+    <div class="banner" id="home">
+        <div class="bannerheading">I'M THE FASHION</div>
+        <div class="bannersub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum expedita necessitatibus
+            corrupti est veniam illo repudiandae quasi tenetur cum repellat, provident maxime iste earum temporibus iure
+            eveniet maiores et, voluptatum</div>
+        <div class="btn_shopnow"><a href="#products" class="shopnow">Shop Now</a></div>
+    </div>
+
+    <!-- ====================SERVICES SECTION========================= -->
+
+    <div class="serheading">OUR SERVICES</div>
+<div class="serser">
+    <div class="sercontainer" id="services">
+        <div class="ser1">Free Shipping </div>
+        <div class="ser2">100% Money Back</div>
+        <div class="ser3">Online Support 24/7</div>
+    </div>
+    <div class="serdesc">
+        <div class="dec">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quo magni architecto numquam
+            doloribus odio
+        </div>
+        <div class="dec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsa animi illum iusto. Beatae
+            consequatur sequi
+        </div>
+        <div class="dec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsa animi illum iusto. Beatae
+            consequatur sequi
+        </div>
+    </div>
+    </div>
+
+    <!-- ====================TRENDING PRODUCTS========================= -->
+    <div class="trheading" id="products">TRENDING PRODUCTS</div>
+
+    <div class="imgrid">
+        <div class="grid1">
+            <div class="gim1"></div>
+            <div class="gtxt1">
+                <sty>━━━━ &nbsp</sty>CLASSY
+            </div>
+        </div>
+        <div class="grid2">
+            <div class="gtxt2">CASUAL <sty> &nbsp━━━━</sty>
+            </div>
+            <div class="gim2"></div>
+        </div>
+        <div class="grid3">
+            <div class="gim3"></div>
+            <div class="gtxt3">SPECIAL<sty> &nbsp━━━━</sty>
+            </div>
+        </div>
+        <div class="grid4"></div>
+        <div class="grid5"></div>
+        <div class="grid6"></div>
+
+    </div>
+    <!-- ====================ABOUT SECTION========================= -->
+
+    <div class="about" id="about">
+        <div class="abouthdng">Luxurious and Contemporary Appeal
+            for Every Woman</div>
+        <div class="aboutdesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptates
+            necessitatibus impedit. Id, ipsam magnam? Porro, aliquid ipsum eaque nesciunt aperiam error! Exercitationem,
+            nemo. Soluta, saepe perspiciatis sed, dicta beatae eum, vitae atque ut temporibus velit voluptatum nulla
+            animi obcaecati debitis delectus. Voluptatem, quis officia? Numquam, deleniti earum quod vitae obcaecati
+            deserunt alias recusandae dolores voluptatibus dolor aspernatur doloribus rerum officia. Facilis autem natus
+            tempore dignissimos</div>
+        <div class="aboutbtn"><a href="#services" class="aser">Know More</a></div>
+    </div>
+
+    <!-- ====================CONTACT SECTION========================= -->
+
+    <div class="conheading" id="contacts">CONTACT US</div>
+    <div class="contact">
+        <div class="contact_form">
+            <form id="contact">
+                <div class="con_text">SEND US A MESSAGE
+                    <input placeholder="Your name" type="text">
+                    <input placeholder="Email" type="email" tabindex="2" required>
+                    <input placeholder="Message ..." type="text" tabindex="1" required>
+                    <div class="submitbtn" type="submit" id="contact-submit" data-submit="...Sending">Send</div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ====================FOOTER SECTION========================= -->
+
+    <div class="footer" id="blog">
+        <div class="footer_top">
+            <div class="flex" id="first">
+                <div class="footer_heading">Company</div>
+                <div class="footersub">Terms and Conditions<br>Privacy Policy<br>Support<br>FAQ</div>
+            </div>
+            <div class="flex" id="second">
+                <div class="footer_heading">Social Media</div>
+                <div class="footersub"><i class="fa-brands fa-facebook"></i> Facebook<br><i
+                        class="fa-brands fa-instagram"></i> Instagram<br><i class="fa-brands fa-twitter"></i>
+                    Twitter<br><i class="fa-brands fa-youtube"> </i> YouTube</div>
+            </div>
+            <div class="flex" id="third">
+                <div class="footer_heading">Contact Us</div>
+                <div class="footersub"><i class="fa-solid fa-location-dot"></i> 22-1-433, Chanderghat<br><i
+                        class="fa-solid fa-envelope"></i> magnifiq@gmail.com<br>
+                    <i class="fa-solid fa-phone"></i> +3512354578</div>
+            </div>
+
+            <div class="flex" id="forth">
+                <div class="footer_heading">About Us</div>
+                <div class="footersub">Lorem ipsum dolor Lorem, ipsum dolor. Lorem ipsum dolor sit</sit>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© All rights reserved | Published 2022</div>
+    </div>
+
+
+</body>
+
+</html>
